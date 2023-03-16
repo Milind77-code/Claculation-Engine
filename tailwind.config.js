@@ -31,14 +31,12 @@ module.exports = {
         'green':'#1A7D40'
       },  
       gridTemplateColumns: {
-        // 24 column grid
         '24': 'repeat(24, minmax(0, 1fr))',
       },
       gridTemplateRows: {
-        // 24 column grid
         '24': 'repeat(24, minmax(0, 1fr))',
       },
-      },
+      width: columns},
   },
   plugins: [],
 }
