@@ -34,7 +34,7 @@ module.exports = {
         '24': 'repeat(24, minmax(0, 1fr))',
       },
       gridTemplateRows: {
-        '24': 'repeat(24, minmax(0, 1fr))',
+        '7': 'repeat(7, minmax(0, 1fr))',
       },
       width: columns},
   },

@@ -5,7 +5,3 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-app-root {
-    display: block;
-    height: 100%;
-  }
