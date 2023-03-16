@@ -1,0 +1,124 @@
+::ng-deep {
+    ::-webkit-scrollbar {
+      width: 4px !important;
+      overflow-y: scroll !important;
+      background: white !important;
+      box-shadow: inset 0 0 4px white !important;
+    }
+  }
+
+  ::ng-deep {
+    ::-webkit-scrollbar-thumb {
+      background: theme('colors.primary-400') !important;
+      border-radius: 10px !important;
+    }
+  }
+
+  .form-input {
+    padding-top: 2px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    color: #083A50;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid theme('colors.primary-400');
+    border-radius: 5px;
+  }
+
+  .form-input-option {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-size: 16px !important;
+   //  padding-top: -5 !important;
+    min-height: 23px !important;
+    width: 100%;
+    color: #083A50;
+  }
+
+  ::ng-deep.mat-focused {
+    border: 1px solid #01B93F !important;
+    box-shadow: -1px -1px 4px rgba(38, 184, 147, 0.2), 2px 2px 4px rgba(38, 184, 147, 0.1) !important;
+    font-size:16px !important; font-family: 'Heebo'!important;color:#083A50!important;
+  }
+
+  form-input:focus {
+    outline: none;
+    background-color: none;
+    border: 1px solid #01B93F !important;
+    font-family: 'Heebo';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    color: #083A50;
+    box-shadow: -1px -1px 4px rgba(38, 184, 147, 0.2), 2px 2px 4px rgba(38, 184, 147, 0.1);
+  }
+
+  ::ng-deep .mat-mdc-select:focus {
+    outline: none;
+    background-color: none;
+    border: 1px solid #01B93F !important;
+    box-shadow: -1px -1px 4px rgba(38, 184, 147, 0.2), 2px 2px 4px rgba(38, 184, 147, 0.1);
+  }
+
+  ::ng-deep .mat-mdc-select-arrow {
+    color: theme('colors.primary');
+  }
+
+  ::ng-deep .mat-mdc-select-disabled {
+    box-shadow: none;
+    border: 1px solid theme('colors.primary-400') !important;
+  }
+
+  ::ng-deep .mat-mdc-select-disabled :focus {
+    box-shadow: none;
+    border: 1px solid theme('colors.primary-400') !important;
+  }
+
+  ::ng-deep .form-input :disabled {
+    box-shadow: none;
+    border: 1px solid theme('colors.primary-400') !important;
+  }
+
+  ::ng-deep .mat-mdc-select-value {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    padding-left: 0.9375rem !important;
+    font-size:16px !important; font-family: 'Heebo'!important;color:#083A50!important;
+  }
+  ::ng-deep.mdc-list-item{
+   font-size:16px !important; font-family: 'Heebo'!important;color:#083A50!important;
+  }
+
+  ::ng-deep .mat-mdc-select-arrow {
+    border-left: 15px solid transparent !important;
+    border-right: none !important;
+    border-top: 15px solid transparent !important;
+    opacity: 0 !important;
+    margin-right: 17px;
+    border-image-repeat: stretch !important;
+  }
+
+  // ::ng-deep .mat-mdc-select-arrow {
+  //     /* Remove the top part of the existing arrow triangle to form a chevron shape */
+  //     &::after {
+  //       content: "";
+  //       display: block;
+  //       width: 0;
+  //       height: 0;
+  //       margin-left: -3px;
+  //       margin-top: -5px;
+  //       border-left: 3px solid transparent;
+  //       border-right: 3px solid transparent;
+  //       border-top: 3px solid white; /* This needs to match your input field background */
+  //     }
+  //   }
+  ::ng-deep .mat-mdc-select-arrow-wrapper {
+    background-image: url('../../../../assets/images/icons/arrow_down.svg') !important;
+    width: 25px !important;
+  }

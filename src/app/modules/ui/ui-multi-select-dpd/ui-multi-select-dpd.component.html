@@ -1,0 +1,7 @@
+
+    <mat-select  class="form-input"  placeholder="{{template.placeholder}}" [(ngModel)]="template.ngModel"  [(value)]="template.ngModel" multiple>
+      <mat-option *ngFor="let option of template.options" [value]="option[template.dropdownValueKey]" (onSelectionChange)="onSelect($event,template.TextName,option[template.dropdownTextKey])">
+        {{option[template.dropdownTextKey]}}</mat-option>
+    </mat-select>
+
+  <!-- [formControl]="toppings" -->

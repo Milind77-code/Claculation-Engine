@@ -1,0 +1,39 @@
+.form-input{
+    padding: 2px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    padding-left:0.9375rem !important;
+    color: theme('colors.metal');
+    height:38px;
+    background: #FFFFFF;
+    border: 1px solid #C1CED3;
+    border-radius: 5px;
+}
+textarea:focus, input:focus{
+    outline: none;
+    background-color: none;
+    border: 1px solid #01B93F !important;
+    box-shadow: -1px -1px 4px rgba(38, 184, 147, 0.2), 2px 2px 4px rgba(38, 184, 147, 0.1);
+}
+
+.withoutborderclass{
+    padding: 2px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    padding-left:0.9375rem !important;
+    color: theme('colors.metal');
+    height:38px;
+    background: #FFFFFF;
+    border:none !important;
+}
+.withoutborderclass:focus{
+    outline: none;
+    background-color: none;
+    border: none !important;   
+}

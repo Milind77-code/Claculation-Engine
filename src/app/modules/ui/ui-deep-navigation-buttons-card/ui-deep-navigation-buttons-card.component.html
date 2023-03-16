@@ -1,0 +1,12 @@
+<div class="custom-card component-card-padding tw-mt-3" *ngIf="false">
+    <mat-card-content flex>
+        <app-ui-card-main-title>Next Steps</app-ui-card-main-title>        
+        <div class="tw-mt-5">     
+            <div class="tw-grid tw-grid-rows-1" style="display: inline;">
+                <div *ngFor="let item of template" style="display: inline;  float:left;">
+                    <button class="nav-button tw-mb-1" [style.background-color]="item.background_color" (click)="loadRoute(item)" >{{item.label}}</button>             
+                </div>
+            </div>       
+        </div>
+    </mat-card-content>
+</div>

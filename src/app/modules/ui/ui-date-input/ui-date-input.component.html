@@ -1,0 +1,14 @@
+<!-- <input 
+ type="text"  
+ name="DoesntKnows"
+ autocomplete="doNotAutoComplete" 
+ [(ngModel)]="template.ngModel" 
+ [value]="template.ngModel" 
+ [disabled]="disable" 
+ (keydown)="getvalue($event.target)" 
+ matInput class="form-input"> -->
+ <input 
+ type="date" [(ngModel)]="template.ngModel" 
+ [value]="template.ngModel" 
+ (change)="getvalue($event.target,template.TextName)" 
+ matInput class="form-input">

@@ -1,0 +1,10 @@
+<input type="number" *ngIf="template.TextName!=='percentOwnership'" name="DoesntKnows" autocomplete="doNotAutoComplete" [(ngModel)]="template.ngModel"
+    [value]="template.ngModel" [disabled]="template.disabled" (keyup)="getvalue($event.target)"
+    style="font-size:16px !important; font-family: 'Heebo'!important;color:theme('colors.metal')!important;" matInput
+    class="form-input">
+
+<input *ngIf="template.TextName==='percentOwnership'" type="number" name="DoesntKnows" autocomplete="doNotAutoComplete"
+    [(ngModel)]="template.ngModel" [value]="template.ngModel" [disabled]="template.disabled"
+    required pattern="^$|^([0-9]|[1-9][0-9]|[1][0][0])?"
+    style="font-size:16px !important; font-family: 'Heebo'!important;color:theme('colors.metal')!important;"
+    class="form-input" min="0" max="100" (keyup)="enforceMinMax($event)" matInput>

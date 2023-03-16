@@ -1,0 +1,42 @@
+// .form-input{
+//     border: 1px solid #DEDEDE;
+//     border-radius: 5px;
+//     font-family: 'Heebo';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 14px;
+//     width: 100%;
+//     padding-left:0.9375rem !important;
+//     color: #000000;
+// }
+.form-input{
+  
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    padding-left:0.9375rem !important;
+    color: theme('colors.metal');
+    height:38px;
+    background: #FFFFFF;
+    border: 1px solid #C1CED3;
+    border-radius: 5px;
+}
+form-input:focus{
+    outline: none;
+    background-color: none;
+    border: 1px solid #01B93F !important;
+    box-shadow: -1px -1px 4px rgba(38, 184, 147, 0.2), 2px 2px 4px rgba(38, 184, 147, 0.1);
+}
+textarea:focus, input:focus{
+    outline: none;
+    background-color: none;
+    border: 1px solid #01B93F !important;
+    box-shadow: -1px -1px 4px rgba(38, 184, 147, 0.2), 2px 2px 4px rgba(38, 184, 147, 0.1);
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(64%) sepia(12%) saturate(506%) hue-rotate(153deg) brightness(89%) contrast(95%);;
+    margin-right:0.3125rem;
+}

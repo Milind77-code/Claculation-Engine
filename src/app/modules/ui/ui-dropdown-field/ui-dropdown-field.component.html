@@ -1,0 +1,14 @@
+<mat-select [disabled]="template.disabled" 
+    style="font-size:16px !important; font-family: 'Heebo'!important; color:#083A50 !important;" 
+    placeholder="{{template.placeholder}}" 
+    [(ngModel)]="template.ngModel" class="form-input tw-my-1 tw-py-4"  >
+    
+    <mat-option 
+        *ngFor="let option of template.options" 
+        [disabled]="option['disabled']" 
+        [value]="option[template.dropdownValueKey]" class="form-input-option" 
+        style="font-size:16px !important; font-family: 'Heebo'!important; color:#083A50 !important;" 
+        (onSelectionChange)="onSelect($event,template.TextName,option[template.dropdownTextKey])">
+        {{option[template.dropdownTextKey]}}
+    </mat-option>
+</mat-select>

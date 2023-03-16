@@ -1,0 +1,4 @@
+<mat-radio-group aria-label="Select an option" class="button-text tw-ml-3" [(ngModel)]="template.ngModel">
+    <mat-radio-button type="radio" *ngFor="let item of template.options" name="ghgName"  (change)="radioChange($event,item.label)"  [value]="item.value">{{item.label}}</mat-radio-button>
+</mat-radio-group>
+<!-- checked={{item.check}} -->

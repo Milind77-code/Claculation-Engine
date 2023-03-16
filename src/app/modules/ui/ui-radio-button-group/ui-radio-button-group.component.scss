@@ -1,0 +1,32 @@
+.button-text{
+    font-family: 'Heebo' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px  !important;
+    color: #BCBEC0  !important;
+}
+::ng-deep .mdc-form-field{
+    font-family: 'Heebo' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px  !important;
+    color: #BCBEC0  !important;
+    padding-right: 3% ;
+}
+::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+    border-color: theme('colors.primary') !important;
+    transition:none !important;
+}
+::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__inner-circle {
+    background-color: theme('colors.primary') !important;
+    border-color: theme('colors.primary') !important;
+    transition:none !important;
+    box-shadow: none;
+}
+::ng-deep.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-selected-focus-icon-color: theme('colors.primary') !important;
+    --mdc-radio-selected-hover-icon-color: theme('colors.primary')!important;
+    --mdc-radio-selected-icon-color: theme('colors.primary') !important;
+    --mdc-radio-selected-pressed-icon-color: theme('colors.primary') !important;
+    --mat-mdc-radio-checked-ripple-color: theme('colors.primary') !important;
+}

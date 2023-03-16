@@ -1,0 +1,80 @@
+.fab-btn {
+    width: 90px;
+    height: 38px;
+    line-height: 16px;
+    font-size: 16px;
+    color: white !important;
+    border-radius: 5px;
+    background-color: theme('colors.primary') !important;;
+    &::ng-deep .mat-button-wrapper{
+        line-height: 16px;
+        padding: 0;
+   }
+}
+.fab-btn-dis {
+    width: 90px;
+    height: 38px;
+    line-height: 16px;
+    font-size: 16px;
+    color: white !important;
+    border-radius: 5px;
+    background-color: theme('colors.primary-400') !important;;
+    &::ng-deep .mat-button-wrapper{
+        line-height: 16px;
+        padding: 0;
+   }
+}
+.fab-btn-outline {
+    width: 90px;
+    height: 38px;
+    line-height: 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid theme('colors.primary') !important;
+    color: theme('colors.primary') !important;
+    &::ng-deep .mat-button-wrapper{
+        line-height: 16px;
+        padding: 0;
+   }
+}
+@media (min-width: 1536px) { 
+    .fab-btn {
+        width: 128px;
+        height: 38px;
+        line-height: 16px;
+        font-size: 16px;
+        color: white !important;
+        border-radius: 5px;
+        background-color: theme('colors.primary') !important;;
+        &::ng-deep .mat-button-wrapper{
+            line-height: 16px;
+            padding: 0;
+       }
+    }
+    .fab-btn-dis {
+        width: 128px;
+        height: 38px;
+        line-height: 16px;
+        font-size: 16px;
+        color: white !important;
+        border-radius: 5px;
+        background-color: theme('colors.primary-400') !important;;
+        &::ng-deep .mat-button-wrapper{
+            line-height: 16px;
+            padding: 0;
+       }
+    }
+    .fab-btn-outline {
+        width: 128px;
+        height: 38px;
+        line-height: 16px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid theme('colors.primary') !important;
+        color: theme('colors.primary') !important;
+        &::ng-deep .mat-button-wrapper{
+            line-height: 16px;
+            padding: 0;
+       }
+    }
+}

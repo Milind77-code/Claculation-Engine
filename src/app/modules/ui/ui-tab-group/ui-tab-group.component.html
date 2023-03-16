@@ -1,0 +1,22 @@
+    <mat-tab-group>
+        <mat-tab label={{item.label}} *ngFor="let item of template;let i = index " 
+       >
+        
+            {{ item.selector}}
+            <!-- <app-organization-identifier></app-organization-identifier> -->
+            <!-- <div *container></div> -->
+  
+        </mat-tab>
+       
+    </mat-tab-group>
+    <!-- <nav mat-tab-nav-bar  [tabPanel]="tabPanel">
+        <a mat-tab-link *ngFor="let item of tabDesc"
+            [routerLink]="item.link"
+          
+           > {{item.label}} </a>
+        <a mat-tab-link disabled>Disabled Link</a>
+        <router-outlet></router-outlet>
+      </nav>
+      <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel> -->
+
+    <!-- routerLinkActive #rla="routerLinkActive" -->

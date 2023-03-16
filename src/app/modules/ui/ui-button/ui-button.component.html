@@ -1,0 +1,16 @@
+
+  <button 
+    mat-stroked-button 
+    class="fab-btn-outline tw-ml-3" 
+    (click)="onClick($event.target)" 
+    *ngIf="template.flatButton?false:true" 
+    [disabled]="template.disable">{{template.button_text}}</button>
+
+
+  <button 
+    mat-flat-button 
+    class="tw-ml-3" 
+    [ngClass]="template.disable?'fab-btn-dis':'fab-btn'" 
+    (click)="onClick($event.target)" 
+    *ngIf="template.flatButton?true:false" 
+    [disabled]="template.disable">{{template.button_text}}</button>

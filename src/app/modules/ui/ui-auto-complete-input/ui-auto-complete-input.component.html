@@ -1,0 +1,23 @@
+<mat-form-field class="search-form tw-w-full tw-my-1">   
+        <input type="text"                 
+        [(ngModel)]="template.ngModel"
+        matInput
+        [formControl]="template.myControl"
+        [matAutocomplete]="auto"
+        name="somethingAutofillDoesntKnows"
+        autocomplete="off" 
+        class="tw-w-full "
+        style="font-size:16px !important; font-family: 'Heebo'!important; color:#083A50 !important;"
+        (keyup)="getvalue($event.target)" 
+        > 
+        <div matSuffix style="display:flex;" >
+            <button mat-icon-button class="search-btn" type="button" [disabled]="true">
+              <mat-icon class="search-icon tw-mr-1">search</mat-icon>
+            </button>
+        </div>
+        <mat-autocomplete #auto="matAutocomplete"  (optionSelected)="onSelect($event)">
+            <mat-option *ngFor="let option of template.options | async" [value]="option">
+              {{option}}
+            </mat-option>
+        </mat-autocomplete>
+</mat-form-field>

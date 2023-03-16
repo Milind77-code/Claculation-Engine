@@ -1,0 +1,18 @@
+<!-- <input type="text"                        
+    [(ngModel)]="ngActivityData.name"
+    matInput
+    [formControl]="myControl"
+
+    class="form-input"
+> -->
+<input 
+ type="text"  
+ name="DoesntKnows"
+ autocomplete="doNotAutoComplete" 
+ [(ngModel)]="template.ngModel" 
+ [value]="template.ngModel" 
+ [disabled]="template.disabled" 
+ [ngClass]="template.disabled ? 'withoutborderclass' : 'form-input'" 
+ (keyup)="getvalue($event.target)" 
+ style="font-size:16px !important; font-family: 'Heebo'!important;color:#083A50 !important;"
+ matInput class="form-input">

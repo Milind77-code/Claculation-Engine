@@ -1,0 +1,32 @@
+  <!-- <mat-form-field>
+    <mat-select style="font-size:16px !important; font-family: 'Heebo'!important; color:#083A50 !important;"
+    placeholder="{{template.placeholder}}" (selectionChange)="onChange($event)"
+     [(ngModel)]="template.ngModel" [disabled]="template.disabled" #singleSelect>
+      <mat-option>
+        <ngx-mat-select-search [formControl]="template.myControl" (ngModelChange)="changeFilter($event)" [placeholderLabel]="'Search'" noEntriesFoundLabel="'No Data Found'"></ngx-mat-select-search>
+      </mat-option>
+
+      <mat-option *ngFor="let option of template.options | async" [value]="option[template.dropdownValueKey]">
+        {{option[template.dropdownTextKey]}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+  
+
+  <mat-select class="form-input tw-my-1 tw-py-4"   [(ngModel)]="template.ngModel"   [disabled]="template.disabled" 
+  [formControl]="myCtrl" placeholder="{{template.options.length>0?template.placeholder:'No Data Available'}}"
+  style="font-size:16px !important; font-family: 'Heebo'!important; color:#083A50 !important;"  #singleSelect>
+    <mat-option  style="padding:1px !important">
+      <ngx-mat-select-search [formControl]="myFilterCtrl" (ngModelChange)="valueChange($event)" [placeholderLabel]="'Search'" noEntriesFoundLabel="No Data Found"></ngx-mat-select-search>
+    </mat-option>
+
+    <mat-option
+     *ngFor="let option of filteredOptions | async"   [disabled]="option['disabled']" 
+     style="font-size:16px !important; font-family: 'Heebo'!important; color:#083A50 !important;" 
+      [value]="option[template.dropdownValueKey]"
+    (onSelectionChange)="onSelect($event,template.TextName,option[template.dropdownTextKey])">
+      {{option[template.dropdownTextKey]}}
+    </mat-option>
+  </mat-select>
+
+  

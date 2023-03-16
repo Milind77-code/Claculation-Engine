@@ -1,0 +1,6 @@
+<!-- <textarea matInput class="form-input" [(ngModel)]="template.ngModel" 
+formControlName="{{template.name}}" [value]="template.ngModel"  (keydown)="getvalue($event.target)" >
+</textarea> -->
+<textarea matInput class="form-textareas" name="{{template.TextName}}"
+(input)="getvalue($event.target)"  placeholder="{{template.TextName}}" style="font-size:16px !important; font-family: 'Heebo'!important;color:theme('colors.metal')!important;" [(ngModel)]="template.ngModel" required></textarea>
+
