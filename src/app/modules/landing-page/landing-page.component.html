@@ -1,0 +1,79 @@
+<div style=" display: flex;
+flex-flow: column;
+height: 100%
+">
+    <div>
+        <app-top-bar></app-top-bar>
+    </div>
+    
+    <div class="grid grid-cols-24 flex-grow : 1; ">
+        <div class="col-span-1">
+            <app-side-navbar></app-side-navbar>
+        </div>
+        <div class="cols-span-23 flex-1 ">
+            <!-- <div  class="grid grid-rows-7 grid-flow-col bg-slate-800 h-full"> -->
+               
+                <div class="row-span-2 bg-gray-50 h-40 w-full"> 
+                    <div class="grid grid-rows-2 h-full">
+                        <div class="row-span-1 h-full">
+                            <div class="grid grid-cols-3 h-full"> 
+                                <div class="grid grid-cols-3 px-6">
+                                    <div class="col-span-1"><app-ui-form-field-label>Parameter :</app-ui-form-field-label></div>
+                                    <div class="col-span-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                                </div>
+                                <div class="grid grid-cols-3 px-6">
+                                    <div class="col-span-1"><app-ui-form-field-label>Data Type :</app-ui-form-field-label></div>
+                                    <div class="col-span-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                                </div>
+                                <div class="grid grid-cols-3 px-6 ">
+                                    <div class="col-span-1"><app-ui-form-field-label>UoM :</app-ui-form-field-label></div>
+                                    <div class="col-span-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="row-span-1 h-full">
+                            <div class="grid grid-cols-3 h-full"> 
+                                <div>
+                                    <mat-card class="mx-12 h-12 rounded param-card">
+                                        <div class="grid grid-cols-2 align-vertical p-3 ">
+                                            <div class="col-span-1"><app-ui-form-field-label>Scope  :</app-ui-form-field-label></div>
+                                            <div class="col-span-1"><app-ui-form-field-label>Parameter </app-ui-form-field-label></div>
+                                        </div>
+                                    </mat-card>
+                                </div>                               
+                                <div>
+                                    <mat-card class="mx-12 h-12 rounded param-card2">
+                                        <div class="grid grid-cols-2 align-vertical p-3 ">
+                                            <div class="col-span-1"><app-ui-form-field-label>Activity Name  :</app-ui-form-field-label></div>
+                                            <div class="col-span-1"><app-ui-form-field-label>Parameter </app-ui-form-field-label></div>
+                                        </div>
+                                    </mat-card>
+                                </div>   
+                                <div>
+                                    <mat-card class="mx-12 h-12 rounded param-card3">
+                                        <div class="grid grid-cols-2 align-vertical p-3 ">
+                                            <div class="col-span-1"><app-ui-form-field-label>Activity Type :</app-ui-form-field-label></div>
+                                            <div class="col-span-1"><app-ui-form-field-label>Parameter </app-ui-form-field-label></div>
+                                        </div>
+                                    </mat-card>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-span-4 col-span-2 h-full mt-3">
+                    <div  class="grid grid-cols-2 grid-flow-row h-full ">
+                    <div class="h-full ">
+                      <app-result-preview></app-result-preview>
+                    </div>
+                    <div class="h-full bg-gray-50">
+                        <router-outlet></router-outlet>
+                    </div>
+                    </div>
+                </div>
+                <div class="row-span-1  h-16 w-full"> Haiiii</div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>

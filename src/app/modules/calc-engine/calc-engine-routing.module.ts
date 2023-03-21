@@ -1,11 +1,10 @@
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FormulaGeneratorComponent } from './components/formula-generator/formula-generator.component';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CalculationComponent } from './calculation/calculation.component';
+import { CalculationComponent } from './components/calculation/calculation.component';
 
-const routes: Routes = [
-  { path: '', redirectTo: 'landing', pathMatch: 'full' },
-  {path: 'landing', loadChildren: () => import('./landing-page/landing-page.module').then(m => m.LandingPageModule)}];
+const routes: Routes = [{path:'formula-generator',component:FormulaGeneratorComponent}]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

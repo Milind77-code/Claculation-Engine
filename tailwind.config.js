@@ -28,7 +28,8 @@ module.exports = {
         'blue': '#06B0D7',
         'purple': '#673AB7',
         'metal':'#083A50',
-        'green':'#1A7D40'
+        'green':'#1A7D40',
+        'gray-50':'#EDEFF2',
       },  
       gridTemplateColumns: {
         '24': 'repeat(24, minmax(0, 1fr))',

@@ -1,6 +1,7 @@
+
 import { RouterModule } from '@angular/router';
 
-import { TopBarComponent } from './modules/top-bar/top-bar.component';
+import { TopBarComponent } from './modules/landing-page/top-bar/top-bar.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { CalcEngineRoutingModule } from './modules/calc-engine/calc-engine-routing.module';
 import { CalcEngineModule } from './modules/calc-engine/calc-engine.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ResultPreviewComponent } from './modules/calc-engine/components/result-preview/result-preview.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule, 
     RouterModule,
     MatFormFieldModule,
-    CalcEngineModule,
   ],
   exports:[AppMaterialModule],
   providers: [],
