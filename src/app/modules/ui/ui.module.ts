@@ -26,6 +26,7 @@ import { UiLabelComponent } from './ui-label/ui-label.component';
 import { UiParaLabelComponent } from './ui-para-label/ui-para-label.component';
 import { UiTemplateCardComponent } from './ui-template-card/ui-template-card.component';
 import { UiDropdownSearchComponent } from './ui-dropdown-search/ui-dropdown-search.component';
+import { UiExpandablePanelComponent } from './ui-expandable-panel/ui-expandable-panel.component';
 
 
 
@@ -56,6 +57,7 @@ import { UiDropdownSearchComponent } from './ui-dropdown-search/ui-dropdown-sear
     //UiGroupComponent,
     //UiGroupCollapseComponent,
     UiDropdownSearchComponent,
+    UiExpandablePanelComponent,
     
     
 
@@ -84,7 +86,9 @@ import { UiDropdownSearchComponent } from './ui-dropdown-search/ui-dropdown-sear
     AppMaterialModule,UiTextareaComponent,UiNumberInputComponent,    
     UiMultiSelectDpdComponent,UiLabelComponent,
     UiParaLabelComponent,
-    UiTemplateCardComponent,    
+    UiTemplateCardComponent,  
+    
+    UiExpandablePanelComponent,  
     //UiGroupComponent,
     //UiGroupCollapseComponent,UiDropdownSearchComponent,
   ],

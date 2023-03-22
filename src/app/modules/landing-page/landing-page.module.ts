@@ -13,7 +13,7 @@ import { CalcEngineModule } from "../calc-engine/calc-engine.module";
 
 
 @NgModule({
-    declarations: [LandingPageComponent, SideNavbarComponent, TopBarComponent],
+    declarations: [LandingPageComponent, SideNavbarComponent, TopBarComponent, ],
     exports: [
         AppMaterialModule, SideNavbarComponent, TopBarComponent
     ],

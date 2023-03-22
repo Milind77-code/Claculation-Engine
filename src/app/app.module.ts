@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { TopBarComponent } from './modules/landing-page/top-bar/top-bar.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './app-material.module';
@@ -26,6 +26,8 @@ import { ResultPreviewComponent } from './modules/calc-engine/components/result-
     FormsModule, 
     RouterModule,
     MatFormFieldModule,
+    AppRoutingModule,BrowserAnimationsModule
+    
   ],
   exports:[AppMaterialModule],
   providers: [],

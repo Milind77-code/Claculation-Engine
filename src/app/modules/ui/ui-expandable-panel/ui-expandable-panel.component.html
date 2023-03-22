@@ -1,0 +1,57 @@
+<p>ui-expandable-panel works!</p>
+<div class="grid grid-cols-12 pl-10 ">            
+            
+    <div class="col-span-11">
+        
+        <mat-accordion class=>
+            <mat-expansion-panel (expandedChange)="onExpandedChange($event)">
+                
+              <mat-expansion-panel-header [ngClass]="{'expanded': isExpanded}">               
+                <mat-panel-description>
+                   <p class="header-text">Select Emission Factor or Activity Factor for the Activity Data</p> 
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <div>
+
+              <div>    
+                
+                <div class="mx-4 grid grid-cols-3 py-2 ">
+                    <div class="col-span-1 mt-1"><app-ui-form-field-label>Select Standard</app-ui-form-field-label></div>
+                    <div class="col-span-2 pl-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                </div>
+                <div class="mx-4 grid grid-cols-3 py-2 ">
+                    <div class="col-span-1 mt-1"><app-ui-form-field-label>Select Source</app-ui-form-field-label></div>
+                    <div class="col-span-2 pl-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                </div>
+                <div class="mx-4 grid grid-cols-3 py-2 ">
+                    <div class="col-span-1 mt-1"><app-ui-form-field-label>Select year of publication</app-ui-form-field-label></div>
+                    <div class="col-span-2 pl-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                </div>
+                <div class="mx-4 grid grid-cols-3 py-2 ">
+                    <div class="col-span-1 mt-1"><app-ui-form-field-label>Select Activity Type</app-ui-form-field-label></div>
+                    <div class="col-span-2 pl-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                </div>
+                <div class="mx-4 grid grid-cols-3 py-2 ">
+                    <div class="col-span-1 mt-1"><app-ui-form-field-label>Select Parameter Type</app-ui-form-field-label></div>
+                    <div class="col-span-2 pl-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                </div>   
+                <div class="mx-4 grid grid-cols-3 py-2 ">
+                    <div class="col-span-1 mt-1"><app-ui-form-field-label>Select Parameter</app-ui-form-field-label></div>
+                    <div class="col-span-2 pl-2"><app-ui-dropdown-field></app-ui-dropdown-field></div>
+                </div>                
+                
+              
+               
+                
+              </div>
+            <div class="text-end">
+                <button class="justify-end bg-green hover:bg-green text-white font-normal py-2 px-4 rounded">
+                    Apply
+                  </button>
+            </div>
+              
+            </div>
+            </mat-expansion-panel>    
+          </mat-accordion>
+    </div> 
+</div>

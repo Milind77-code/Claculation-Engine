@@ -1,3 +1,4 @@
+import { UiModule } from './../ui/ui.module';
 import { ResultPreviewComponent } from './components/result-preview/result-preview.component';
 
 import { AppMaterialModule } from 'src/app/app-material.module';
@@ -17,7 +18,7 @@ import { FormulaGeneratorComponent } from './components/formula-generator/formul
   imports: [
     CommonModule,
     AppMaterialModule,
-    CalcEngineRoutingModule ],
+    CalcEngineRoutingModule ,UiModule],
   exports:[
     AppMaterialModule,ResultPreviewComponent
   ]

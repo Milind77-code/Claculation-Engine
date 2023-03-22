@@ -3,5 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Caudex:400,700');
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lexend:400,700');
 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
